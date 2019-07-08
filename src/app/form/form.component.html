@@ -1,0 +1,44 @@
+<section>
+
+
+
+
+<h2>Crear Pelicula o Serie</h2>
+
+
+    <form (ngSubmit)="saveMovie()" >
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input [(ngModel)]="movie.name"  name="name" type="text" class="form-control" id="name"  placeholder="Ingresar Nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Descripción:</label>
+            <textarea [(ngModel)]="movie.description" name="description" class="form-control" id="description"  placeholder="Ingresar Descripción" cols="30" rows="2"></textarea>
+          </div>
+
+          <div class="form-group">
+              <label for="genre">Género:</label>
+              <input [(ngModel)]="movie.genre" type="text" name="genre" class="form-control" id="genre"  placeholder="Ingresar Nombre">
+          </div>
+
+          <div class="form-group">
+                <label for="year">Año:</label>
+                <input [(ngModel)]="movie.year" type="number" name="year" class="form-control" id="year"  placeholder="Ingresar Nombre">
+
+          </div>
+
+          <div class="form-group">
+              <label for="duration">Duracion:</label>
+              <input [(ngModel)]="movie.duration" type="text" name="duration" class="form-control" id="duration"  placeholder="Ingresar Nombre">
+        </div>
+        
+        <button  type="submit" class="btn btn-primary btn-block">Guardar</button>
+      </form>
+
+</section>
+
+
+
+
+

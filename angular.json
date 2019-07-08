@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -83,9 +84,10 @@
               "src/assets"
             ],
             "styles": [
+              "/node_modules/material-design-lite/material.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["/node_modules/material-design-lite/material.min.js"]
           }
         },
         "lint": {
@@ -114,6 +116,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "edoramas-app"
 }
